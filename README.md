@@ -2,6 +2,6 @@
 fast API using python
 
 ##How to start up server
-Uvicorn main:app
+Uvicorn app.main:app
 ##How to reload server
-Uvicorn main:app --reload
+Uvicorn app.main:app --reload
