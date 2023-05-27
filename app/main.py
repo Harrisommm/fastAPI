@@ -9,12 +9,11 @@ class Post(BaseModel):
     title: str
     content: str
     published: bool = True
-    rating: Optional[int] = None
 
 my_posts = [{"title:": "title", "content": "content","id": 1}]
 
 def find_post(id):
-    for p in my_post:
+    for p in my_posts:
         if ["id"] == id:
             return p
 @app.get("/")
@@ -67,4 +66,3 @@ def update_post(id: int, post: Post):
     post_dict['id'] = id
     my_posts[index] = post_dict
     return {"data": post_dict}
-=
